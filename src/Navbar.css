@@ -1,0 +1,30 @@
+.navbar-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: gray;
+    padding: 0 30px;
+}
+
+.navbar-title {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    transition: 0.3s ease-in;
+}
+
+.navbar-title:hover {
+    color: black;
+}
+
+.navbar-author {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.navbar-author:hover {
+    color: black;
+}

@@ -1,0 +1,54 @@
+.Menu-main {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(240,240,240);
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.Menu-both {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.muscle-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+
+.custom-container {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Custom-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    text-align: initial;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.back {
+    text-align: center;
+}
