@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-workouts/static/css/main.7cdecbfd.chunk.css",
+    "main.js": "/react-workouts/static/js/main.c9b0cb4c.chunk.js",
+    "main.js.map": "/react-workouts/static/js/main.c9b0cb4c.chunk.js.map",
+    "runtime-main.js": "/react-workouts/static/js/runtime-main.930b6d44.js",
+    "runtime-main.js.map": "/react-workouts/static/js/runtime-main.930b6d44.js.map",
+    "static/js/2.14f5e73c.chunk.js": "/react-workouts/static/js/2.14f5e73c.chunk.js",
+    "static/js/2.14f5e73c.chunk.js.map": "/react-workouts/static/js/2.14f5e73c.chunk.js.map",
+    "index.html": "/react-workouts/index.html",
+    "precache-manifest.3af4fade8050f45349223f3687322be2.js": "/react-workouts/precache-manifest.3af4fade8050f45349223f3687322be2.js",
+    "service-worker.js": "/react-workouts/service-worker.js",
+    "static/css/main.7cdecbfd.chunk.css.map": "/react-workouts/static/css/main.7cdecbfd.chunk.css.map",
+    "static/js/2.14f5e73c.chunk.js.LICENSE.txt": "/react-workouts/static/js/2.14f5e73c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.930b6d44.js",
+    "static/js/2.14f5e73c.chunk.js",
+    "static/css/main.7cdecbfd.chunk.css",
+    "static/js/main.c9b0cb4c.chunk.js"
+  ]
+}
