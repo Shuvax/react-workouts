@@ -4,7 +4,6 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import MuiDialogContent from '@material-ui/core/DialogContent';
-import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
@@ -17,10 +16,11 @@ const styles = (theme) => ({
     padding: theme.spacing(2),
   },
   closeButton: {
-    position: 'absolute',
-    right: theme.spacing(1),
-    top: theme.spacing(1),
+    position: 'relative',
+    padding: 0,
     color: theme.palette.grey[500],
+    marginBottom: theme.spacing(1),
+   
   },
 });
 
@@ -28,28 +28,22 @@ const DialogTitle = withStyles(styles)((props) => {
   const { children, classes, onClose, ...other } = props;
   return (
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
-      <Typography variant="h6">{children}</Typography>
       {onClose ? (
-        <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
+        <IconButton  aria-label="close" className={classes.closeButton} onClick={onClose}>
           <CloseIcon />
         </IconButton>
       ) : null}
+      <Typography variant="h6">{children}</Typography>
     </MuiDialogTitle>
   );
 });
+
 
 const DialogContent = withStyles((theme) => ({
   root: {
     padding: theme.spacing(10),
   },
 }))(MuiDialogContent);
-
-const DialogActions = withStyles((theme) => ({
-  root: {
-    margin: 0,
-    padding: theme.spacing(1),
-  },
-}))(MuiDialogActions);
 
 
 export default function ArmPopup(props) {
@@ -75,13 +69,12 @@ export default function ArmPopup(props) {
   const {muscle} = props;
 
   return (
-    
     <div>
       <Button variant="contained" color="link" onClick={handleClickOpen}>
         {muscle}
       </Button>
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+        <DialogTitle style={{textAlign: 'center'}}>
           {muscle} Workout
         </DialogTitle>
         <DialogContent dividers>
@@ -89,11 +82,7 @@ export default function ArmPopup(props) {
             {getDialogue()}
           </Typography>
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose} color="primary">
-            Save changes
-          </Button>
-        </DialogActions>
+        <DialogTitle style={{textAlign: 'center', padding: '0.5rem 0', margin: 0}} id="customized-dialog-title" onClose={handleClose}/>
       </Dialog>
     </div>
   );

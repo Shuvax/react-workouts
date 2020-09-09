@@ -50,15 +50,18 @@ function Menu() {
         <div className='Menu-main'>
             <Navbar />
             <div className='Menu-both'>
-                <ul className='muscle-list'>
-                    {muscleGroups.map(muscle => (
-                        <l1><Button variant='contained' component={Link} to={`/${muscle}`} color='link'>{muscle}</Button></l1>
-                    ))}
-                </ul>     
+                <div className='muscle-list-container'>
+                    <ul className='muscle-list'>
+                        {muscleGroups.map(muscle => (
+                            <l1><Button variant='contained' component={Link} to={`/${muscle}`} color='link'>{muscle}</Button></l1>
+                        ))}
+                    </ul>    
+                </div>
                 <div className='custom-container'>
-                    <Typography style={{ paddinh: 16 }} variant='h2'>My Plan</Typography>
-                    <CustomForm addTodo={addTodo} />
+                    <Typography id='my-plan-heading'  variant='h2'>My Plan</Typography>
+                    <CustomForm id='custom-form' addTodo={addTodo} />
                     <CustomList 
+                        id='custom-list'
                         todos={todos} 
                         toggleComplete={toggleComplete} 
                         removeTodo={removeTodo}

@@ -35,3 +35,18 @@
 .mainButton:hover  {
     background-color: rgb(220,220,220);
 }
+
+
+@media only screen and (max-width : 450px) {
+    .top {
+        margin: 0 30px;
+    }
+}
+
+@media only screen and (max-width : 275px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

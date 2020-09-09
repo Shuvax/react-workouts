@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import WorkoutApp from './WorkoutApp';
 import { Route, Switch } from 'react-router-dom';
 import {TransitionGroup, CSSTransition } from 'react-transition-group';
@@ -81,7 +81,7 @@ function App() {
                             )} 
                         />  
                         <Route 
-                            component={() => <Menu />} 
+                            component={() => <WorkoutApp />} 
                         />
                     </Switch>
                 </CSSTransition>

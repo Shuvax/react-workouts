@@ -5,6 +5,8 @@
     flex-grow: 1;
     background-color: gray;
     padding: 0 30px;
+    margin-bottom: 1rem;
+    
 }
 
 .navbar-title {
@@ -27,4 +29,13 @@
 
 .navbar-author:hover {
     color: black;
+}
+
+@media only screen and (max-width : 300px) {
+    .navbar-main {
+        flex-direction: column;
+    }
+    .navbar-title {
+        margin-top: 1rem;
+    }
 }

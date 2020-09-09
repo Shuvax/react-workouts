@@ -72,7 +72,7 @@ export default [
                             <li>1 set of 6 reps</li>
                         </ul>
                     </div>
-                    <h3>Cable Crossover:</h3>
+                    <h3>Cable Crossovers:</h3>
                     <div style={{
                         display: 'flex',
                         alignItems: 'center',

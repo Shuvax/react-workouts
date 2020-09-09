@@ -72,7 +72,7 @@ export default [
                             <li>1 set of 8 reps</li>
                         </ul>
                     </div>   
-                    <h3>Tricep Dumbbell Extensions:</h3>
+                    <h3>Tricep Extensions:</h3>
                     <div style={{
                         display: 'flex',
                         alignItems: 'center',

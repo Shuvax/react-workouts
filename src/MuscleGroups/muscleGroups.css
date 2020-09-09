@@ -1,0 +1,59 @@
+.muscle-group-main {
+    overflow: none;
+    background-color: rgb(240,240,240);
+}
+
+section.page {
+    background-color: rgb(240,240,240);
+    overflow: auto;
+}
+
+.muscle-group-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+ul.muscle-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*---------------------@Media---------------------*/
+
+@media only screen and (max-width : 2200px) {
+   
+}
+/*
+@media only screen and (max-width : 1700px) {
+ 
+}
+
+@media only screen and (max-width : 1400px) {
+
+}
+
+@media only screen and (max-width : 1400px) {
+  
+
+@media only screen and (max-width : 1024px) {
+   
+}
+
+@media only screen and (max-width : 600px) {
+}
+*/
+@media only screen and (max-width : 450px) {
+    .muscle-group-content-container {
+        margin-top: 3rem;
+    }
+    div.MuiDialogContent-root{
+        padding: 30px;
+    }
+    .back {
+        margin: 2rem 0;
+    }
+}
+
